@@ -27,7 +27,13 @@ exports.registerUA = function(params, callback){
        'id':deviceId, 
        'platform':platform
     }
-  });
+  }, function(err, res) {
+  if (err) {
+    console.log(err.toString())
+  } else {
+    console.log("status from UA : " + res.status);
+  }
+});
   return callback(null, res);
 };
 
