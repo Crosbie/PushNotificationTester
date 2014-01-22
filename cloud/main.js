@@ -29,7 +29,7 @@ exports.registerUA = function(params, callback){
     }
   }, function(err, res) {
   if (err) {
-    console.log(err.toString())
+    console.log(err.toString());
   } else {
     console.log("status from UA : " + res.status);
   }
