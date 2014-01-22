@@ -3,7 +3,7 @@
  */
 
 
-function registerUA(params, callback){
+exports.registerUA = function(params, callback){
   //return callback(null, {test: 'test'});
   var deviceId, platfrom;
   if(params.deviceToken){
@@ -29,9 +29,9 @@ function registerUA(params, callback){
     }
   });
   return callback(null, res);
-}
+};
 
-function pushMessages(params, callback){
+exports.pushMessages = function(params, callback){
   var message = "hello from FH";
   /**
    * Broadcast a message to all the devices. 
@@ -43,7 +43,4 @@ function pushMessages(params, callback){
   var res_ios = $fh.push({'act':'broadcast', 'type':'dev', 'params':ios_message});
   var res_android = $fh.push({'act':'broadcast', 'type':'dev', 'params':android_message});
   return callback(null,{'result': 'ok'});
-}
-
-exports.registerUA = registerUA();
-exports.pushMessages = pushMessages();
+};
