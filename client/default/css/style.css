@@ -1,0 +1,13 @@
+body {
+    font-family: "Verdana";
+}
+input.btn {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+}
+
+.btn-container {
+    text-align: center;
+}

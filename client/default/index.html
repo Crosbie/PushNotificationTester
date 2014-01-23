@@ -1,7 +1,12 @@
+<link rel="stylesheet" href="css/style.css"/>
 <script type="text/javascript" src="js/init.js" charset="utf-8"></script>
 
-<input id="registerButton" type="button" value="Register Push Notification" onclick="registerAPN();"/>
-<input id="sendMessage" type="button" value="Broadcast Message" onclick="broadcastMessage();" />
-<p id="result"></p>
+<div class="btn-container">
+    <h1>Feedhenry Push Test</h1>
+    <input id="registerButton" class="btn" type="button" value="Register Device" onclick="registerAPN();"/><br/>
+    <input id="sendMessage" class="btn" type="button" value="Broadcast Message" onclick="broadcastMessage();" /><br/>
+    <input id="sendDirectMessage" class="btn" type="button" value="Direct Message" onclick="directMessage();" /><br/>
+</div>
+<p id="result"></p><br/>
 <p id="message"></p>
 
