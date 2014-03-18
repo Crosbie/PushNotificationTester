@@ -62,19 +62,20 @@ exports.pushMessages = function(params, callback) {
       'body': message
     }
   };
-  var res_ios = $fh.push({
-    'act': 'broadcast',
-    'type': 'dev',
-    'params': ios_message
-  });
+  // var res_ios = $fh.push({
+  //   'act': 'broadcast',
+  //   'type': 'dev',
+  //   'params': ios_message
+  // });
   var res_android = $fh.push({
     'act': 'broadcast',
     'type': 'dev',
     'params': android_message
-  });
-  return callback(null, {
-    'result': 'ok'
-  });
+  },callback);
+  
+  // return callback(null, {
+  //   'result': 'ok'
+  // });
 };
 
 
