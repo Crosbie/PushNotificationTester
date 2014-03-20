@@ -93,7 +93,7 @@ exports.pushDirectMessage = function(params, callback) {
   // };
 
   var android_message = {
-    'device_tokens': [deviceToken],
+    'apids': [deviceToken],
     'android': {
       'alert': message
     }
